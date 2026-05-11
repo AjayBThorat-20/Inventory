@@ -59,7 +59,8 @@ export default function Home() {
       allProjects={projects.map((p) => p.project)}
       onProjectChange={setSelectedProjectId}
     >
-      <div className="p-4 lg:p-6">
+      <div className='bg-gray-200 m-4 border-gray-100 rounded-md'>
+      <div className="p-4 lg:p-6 ">
         <Searchbar onSearch={setSearchQuery} />
 
         {/* Project Accordions */}
@@ -78,6 +79,7 @@ export default function Home() {
               }}
             />
           ))}
+        </div>
         </div>
       </div>
     </WrapperLayout>

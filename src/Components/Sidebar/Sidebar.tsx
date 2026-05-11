@@ -59,48 +59,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
         ))}
       </nav>
 
-      {/* Bottom Section */}
-      <div className="px-2 py-4 space-y-1 border-t border-gray-200">
-        <button
-          className={`
-            w-full h-12 
-            rounded-lg 
-            flex items-center
-            px-3
-            text-gray-600 hover:bg-gray-100 hover:text-gray-900
-            transition-colors
-            ${!isOpen && 'justify-center'}
-          `}
-          title="Settings"
-        >
-          <span className="flex-shrink-0 text-2xl">⚙️</span>
-          {isOpen && (
-            <span className="ml-3 text-sm font-medium whitespace-nowrap">
-              Settings
-            </span>
-          )}
-        </button>
-
-        <button
-          className={`
-            w-full h-12 
-            rounded-lg 
-            flex items-center
-            px-3
-            text-gray-600 hover:bg-gray-100 hover:text-gray-900
-            transition-colors
-            ${!isOpen && 'justify-center'}
-          `}
-          title="Help"
-        >
-          <span className="flex-shrink-0 text-2xl">❓</span>
-          {isOpen && (
-            <span className="ml-3 text-sm font-medium whitespace-nowrap">
-              Help
-            </span>
-          )}
-        </button>
-      </div>
+      
     </aside>
   );
 };

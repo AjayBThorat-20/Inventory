@@ -25,7 +25,7 @@ export const WrapperLayout: React.FC<WrapperLayoutProps> = ({
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gray-50 overflow-hidden">
+    <div className="flex flex-col h-screenoverflow-hidden">
       {/* Header - Full Width at Top */}
       <Header
         selectedProject={selectedProject}
